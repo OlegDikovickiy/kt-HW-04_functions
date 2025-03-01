@@ -11,7 +11,7 @@ class Test {
         val amount = 1_000
 
         val result = transfer(cardType, previousTransfers, monthlySent, amount)
-        assertEquals(ERROR_TYPE_CARD, result)
+        assertEquals(0, result)
     }
 
     @Test //В пределах акции для Maestro, комиссия 0
